@@ -26,11 +26,11 @@ if Nlista in festa:
     Clista = festa.index(Nlista)
     print('A Pessoa convidada esta na posição "{}"'.format(Clista))
     CPfesta = input('Ainda deseja que ele compareça na festa? s/n: ')
+    if CPfesta == 'n':
+        festa.remove(Nlista)
+        print(festa)
     if CPfesta == 's':
         print('Ok ')
-    elif CPfesta == 'n':
-        festa.remove(CPfesta)
-        print(festa)
 
 print('IsaacSouza')
 
